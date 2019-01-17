@@ -1,4 +1,5 @@
-FROM  node:8-alpine
+FROM  katharostech/quasar-cli:latest
+#FROM  node:8-alpine
 
 RUN npm install -g vue-cli && \
     npm install -g quasar-cli && \
