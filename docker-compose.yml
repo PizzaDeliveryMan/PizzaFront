@@ -2,16 +2,16 @@ version: '3'
 services:
   frontend:
     build: .
-    #image: your-docker-org/your-app-name
+    image: katharostech/quasar-cli:latest
     command: sh
     ports: 
       - "8080:8080"
-    volumes: 
-      - .:/home/node/app:rw
+    #volumes: 
+    #  - .:/home/node/app:rw
 
     #volumes:
-    #  - .:/opt/app
-    #  - /opt/app/node_modules
+      - .:/opt/app
+      - /opt/app/node_modules
 
     restart: "no"
     stdin_open: true
